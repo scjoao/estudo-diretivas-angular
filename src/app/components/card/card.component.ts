@@ -7,4 +7,23 @@ import { Component } from '@angular/core';
 })
 export class CardComponent {
 
+  produtos: string[] = [];
+
+  constructor(){
+    this.produtos = [
+      "Mouse",
+      "Teclado",
+      "Fonte"
+    ]
+  }
+
+  adicionar(){
+    this.produtos.push("Joãozin");
+  }
+
+  remover(index: number){
+    alert(index);
+    this.produtos.splice(index, 1);
+  }
+
 }
