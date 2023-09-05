@@ -2,3 +2,14 @@
 <button (click)="trocar()">Trocar</button>
 
 <h1 [ngStyle]="{'background': corFundo, 'color': corFonte}">Curso Angular</h1>
+
+<h1>Lista de compras</h1>
+<p>Adicione um item</p>
+<input type="text" [(ngModel)]="item">
+<button (click)="adicionarLista()">Adicionar</button>
+<p>{{ item }}</p>
+<ul>
+  <li *ngFor="let item of lista">{{ item }}</li>
+</ul>
+
+<hr>

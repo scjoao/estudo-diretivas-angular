@@ -10,6 +10,8 @@ export class AtributosComponent {
   estilo: string = "disable";
   corFundo: string = "blue";
   corFonte: string = "white";
+  item: string = "";
+  lista: string[] = [];
 
   trocar(){
     if(this.estilo == "disable"){
@@ -17,6 +19,10 @@ export class AtributosComponent {
     }else{
       this.estilo = "disable";
     }
+  }
+
+  adicionarLista(){
+    this.lista.push(this.item);
   }
 
 }
