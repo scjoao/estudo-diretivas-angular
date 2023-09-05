@@ -3,6 +3,8 @@
 
 <h1 [ngStyle]="{'background': corFundo, 'color': corFonte}">Curso Angular</h1>
 
+<ng-content select="p"></ng-content>
+
 <h1>Lista de compras</h1>
 <p>Adicione um item</p>
 <input type="text" [(ngModel)]="item">
