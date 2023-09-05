@@ -12,6 +12,7 @@ export class AtributosComponent {
   corFonte: string = "white";
   item: string = "";
   lista: string[] = [];
+  isEnableBlock: boolean = true;
 
   trocar(){
     if(this.estilo == "disable"){
