@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 export class CardComponent {
 
   produtos: string[] = [];
+  menuType: string = "superuser";
 
   constructor(){
     this.produtos = [
